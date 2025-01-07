@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="checkout.html">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 p-4 text-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">My Store</h1>
+      <a href="#" class="px-4 py-2 bg-blue-500 rounded hover:bg-blue-400">Home</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-8 p-4">
+    <h2 class="text-2xl font-bold mb-6">Your Cart</h2>
+
+    <!-- Cart Table -->
+    <div class="overflow-x-auto bg-white rounded-lg shadow-md">
+      <table class="min-w-full table-auto">
+        <thead class="bg-gray-200 text-gray-700">
+          <tr>
+            <th class="px-6 py-3 text-left">Product</th>
+            <th class="px-6 py-3 text-left">Price</th>
+            <th class="px-6 py-3 text-left">Quantity</th>
+            <th class="px-6 py-3 text-left">Total</th>
+            <th class="px-6 py-3 text-left">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Cart Item Row -->
+          <tr class="border-b">
+            <td class="px-6 py-4">Product Name</td>
+            <td class="px-6 py-4">$25.00</td>
+            <td class="px-6 py-4">
+              <input type="number" value="1" class="w-16 p-2 border rounded">
+            </td>
+            <td class="px-6 py-4">$25.00</td>
+            <td class="px-6 py-4">
+              <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-400">
+                Remove
+              </button>
+            </td>
+          </tr>
+          <!-- Repeat for other cart items -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cart Summary -->
+    <div class="mt-6 flex justify-between items-center">
+      <h3 class="text-lg font-semibold">Total: <span class="text-blue-600">$25.00</span></h3>
+      <button class="px-6 py-2 bg-green-600 text-white rounded hover:bg-green-500">
+        <a href="checkout.html" class="px-6 py-2 bg-green-600 text-white rounded hover:bg-green-500">
+            Proceed to Checkout
+          </a>
+          
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; 2025 My Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
